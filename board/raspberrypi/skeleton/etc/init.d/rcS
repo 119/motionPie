@@ -1,6 +1,7 @@
 #!/bin/sh
 
-
+export PS4='+km_add $BASH_SOURCE:$LINENO:'
+set -x
 # Start all init scripts in /etc/init.d
 # executing them in numerical order.
 #

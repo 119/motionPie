@@ -1,5 +1,5 @@
 #!/bin/bash -e
-
+export PS4='+kmadd $BASH_SOURCE:$LINENO:'
 test "root" != "$USER" && exec sudo $0 "$@"
 
 function msg() {

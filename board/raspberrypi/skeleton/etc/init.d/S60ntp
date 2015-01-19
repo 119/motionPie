@@ -5,7 +5,7 @@
 mkdir -p /var/lib/ntp
 
 set_current_date() {
-    timestamp=$(python -c 'import calendar, httplib, email.utils; conn = httplib.HTTPConnection("google.com"); conn.request("HEAD", "/"); \
+    timestamp=$(python -c 'import calendar, httplib, email.utils; conn = httplib.HTTPConnection("baidu.com"); conn.request("HEAD", "/"); \
             print calendar.timegm(email.utils.parsedate(conn.getresponse().getheader("date")))')
     
     if [ -n "$timestamp" ]; then
